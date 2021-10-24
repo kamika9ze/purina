@@ -1,0 +1,97 @@
+@import "fonts.scss";
+
+$browser-context-width: 19.2;
+
+@function vw($pixels, $context: $browser-context-width) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1vw;
+}
+$browser-context-height: 7.28;
+
+@function vh($pixels, $context: $browser-context-height) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1vh;
+}
+
+$browser-context-planshet: 10.8;
+
+@function vwp($pixels, $context: $browser-context-planshet) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1vw;
+}
+
+
+$browser-context-mobile: 4.14;
+
+@function vwm($pixels, $context: $browser-context-mobile) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1vw;
+}
+
+$browser-context-mobile-landscape: 8.96;
+
+@function vhm($pixels, $context: $browser-context-mobile-landscape) {
+    @if (unitless($pixels)) {
+        $pixels: $pixels * 1px;
+    }
+
+    @if (unitless($context)) {
+        $context: $context * 1px;
+    }
+
+    @return $pixels / $context * 1vh;
+}
+
+// @function mediaPlanshetMax($style) {
+//     @if (unitless($style)) {
+//         $pixels: @media(max-width: 1366px) {
+//             $style
+//         }
+//     }
+
+//     @if (unitless($context)) {
+//         $context: $context * 1px;
+//     }
+
+//     @return $pixels / $context * 1vw;
+// }
+
+@import "constant.scss";
+@import "icons.scss";
+@import "aside.scss";
+@import "header.scss";
+@import "content.scss";
+@import "footer.scss";
+@import "form.scss";
+@import "modal-style.scss";
+
+/* mobile style*/
+@media (max-width: 1024px) {}
