@@ -10,8 +10,8 @@ $White: #fff;
 $gold: #FED989;
 $Black: #000;
 $TextColor: #A9A5A5;
-$Planshet: 1050px;
-$PlanshetMax: 1050px;
+$Planshet: 1023px;
+$PlanshetMax: 1023px;
 $Mobile: 728px;
 $MobileLand: 828px;
 $MobileLandW: 1024px;
@@ -33,11 +33,25 @@ body {
     margin: auto;
     padding: 0 vw(10px);
     box-sizing: border-box;
-    z-index: 3;
+    z-index: 2;
     position: relative;
+    @media(max-width: $Planshet) {
+        width: 100%;
+        padding: 0 vwp(25px);
+    }
+    @media(max-width: $Mobile) {
+        width: 100%;
+        padding: 0 vwm(16px);
+    }
 }
 .row {
     margin: 0 vw(-10px);
+    @media(max-width: $Planshet) {
+        margin: 0 vwp(-25px);
+    }
+    @media(max-width: $Mobile) {
+        margin: 0 vwm(-16px);
+    }
 }
 .box-container {
     width: 100%;
@@ -89,6 +103,104 @@ button {
             margin-left: vw(21px);
             position: relative;
         }
+        @media(max-width: $Planshet) {
+            width: vwp(280px);
+            line-height: vwp(60px);
+            .ico-arrow-left-white {
+                top: vwp(-2px);
+                margin-left: vwp(21px);
+            }
+        }
+        
+        @media(max-width: $Mobile) {
+            width: 100%;
+            line-height: vwm(60px);
+            .ico-arrow-left-white {
+                top: vwm(-2px);
+                margin-left: vwm(21px);
+            }
+        }
+    }
+    &-red {
+        background: #ED1C24;
+        border-radius: 5px;
+        width: vw(280px);
+        line-height: vw(60px);
+        color: #FFFFFF;
+        &:hover {
+            background: #FE353D;
+        }
+        .ico-arrow-left-white {
+            top: vw(-2px);
+            margin-left: vw(21px);
+            position: relative;
+        }
+        @media(max-width: $Planshet) {
+            width: vwp(280px);
+            line-height: vwp(60px);
+            .ico-arrow-left-white {
+                top: vwp(-2px);
+                margin-left: vwp(21px);
+            }
+        }
+        
+        @media(max-width: $Mobile) {
+            width: 100%;
+            line-height: vwm(60px);
+            .ico-arrow-left-white {
+                top: vwm(-2px);
+                margin-left: vwm(21px);
+            }
+        }
+    }
+    &-white {
+        background: none;
+        border-radius: 5px;
+        width: vw(200px);
+        line-height: vw(60px);
+        color: #FFFFFF;
+        border: 2px solid #A9A5A5;
+        color: #A9A5A5;
+        font-size: vw(20px);
+        &:hover {
+            background: #A9A5A5;
+            color: #000;
+        }
+        @media(max-width: $Planshet) {
+            width: vwp(200px);
+            line-height: vwp(60px);
+        }
+        
+        @media(max-width: $Mobile) {
+            width: 100%;
+            line-height: vwm(60px);
+        }
+    }
+    &-more {
+        background: none;
+        border-radius: 5px;
+        width: auto;
+        line-height: vw(22px);
+        color: $gold;
+        font-size: vw(18px);
+        &:hover {
+        }
+        @media(max-width: $Planshet) {
+            line-height: vwp(22px);
+            font-size: vwp(18px);
+        }
+        
+        @media(max-width: $Mobile) {
+            line-height: vwm(22px);
+            font-size: vwm(18px);
+        }
+    }
+    @media(max-width: $Planshet) {
+        font-size: vwp(16px);
+    }
+    
+    @media(max-width: $Mobile) {
+        font-size: vwm(14px);
     }
 }
 .slick-list, .slick-track {
@@ -114,9 +226,18 @@ p {
         align-items: center;
         color: #000;
         text-transform: uppercase;
-        text-shadow: 1px 0 1px #a9a5a5, 0 1px 1px #a9a5a5, -1px 0 1px #a9a5a5, 0 -1px 1px #a9a5a5;
+        text-shadow: 1px 0 1px #a9a5a5, 0 1px 1px #a9a5a5, -1px 0 1px #a9a5a5, 0 -1px 1px #a9a5a5, 0 -2px 1px #a9a5a5;
         display: inline-block;
         position: relative;
+        @media (max-width: $Planshet) {
+            font-size: vwp(55px);
+            line-height: vwp(67px);
+            text-shadow: 1px 0 0px #a9a5a5, 0 0px 0px #a9a5a5, 0px 0 0px #a9a5a5, 0 2px 1px #a9a5a5, 0 -1px 1px #a9a5a5;
+        }
+        @media (max-width: $Mobile) {
+            font-size: vwm(30px);
+            line-height: vwm(37px);        
+        }
     }
     &:after {
         content: "";
@@ -127,6 +248,18 @@ p {
         position: absolute;
         right: vw(-125px);
         top: vw(67px);
+        @media (max-width: $Planshet) {
+            width: vwp(142.62px);
+            height: vwp(2px);
+            right: vwp(-125px);
+            top: vwp(45px);
+        }
+        @media (max-width: $Mobile) {
+            width: vwm(50px);
+            height: vwm(2px);
+            right: vwm(-125px);
+            top: vwm(67px);   
+        }
     }
     div {
         font-weight: 500;
@@ -137,10 +270,34 @@ p {
         color: $gold;
         position: relative;
         top: vw(-5px);
+        @media (max-width: $Planshet) {
+            font-size: vwp(20px);
+            line-height: vwp(25px);
+            top: vwp(-2px);
+        }
+        @media (max-width: $Mobile) {
+            font-size: vwm(14px);
+            line-height: vwm(17px);     
+            top: vwm(-2px);   
+        }
     }
 }
 .scroll__content, .scroll__content * {
     transition: none;
+}
+.hr__gradient {
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, #000000 0%, #FED989 49.04%, #000000 100.63%);
+}
+.slick-slider {
+    @media(max-width: $Planshet) {
+        padding-bottom: vwp(80px);
+    }
+    
+    @media(max-width: $Mobile) {
+        padding-bottom: vwm(70px);
+    }
 }
 .slick-arrow {
     width: vw(80px);
@@ -168,6 +325,32 @@ p {
         right: initial;
         left: vw(-100px);
     }
+    @media(max-width: $Planshet) {
+        width: vwp(60px);
+        height: vwp(60px);
+        background-size: vwp(9px) vwp(18px);
+        right: calc(50% - 90px);
+        bottom: 0;
+        top: initial;
+        transform: translateY(0%);
+        &.slick-prev {
+            left: calc(50% - 90px);
+            transform: rotate(180deg) translateY(0%);
+        }
+    }
+    
+    @media(max-width: $Mobile) {
+        width: vw(50px);
+        height: vw(50px);
+        background-size: vw(8px) vw(16px);
+        right: calc(50% - 75px);
+        &.slick-prev {
+            left: calc(50% - 75px);
+        }
+    }
+}
+.openMenu {
+    overflow-y: hidden;
 }
 .d-hidden {
     display: none !important;
@@ -282,12 +465,6 @@ p {
     }
 }
 @media (max-width: $Planshet) {
-    .btn {
-        min-width: vwp(240px);
-        border-radius: vwp(24px);
-        font-size: vwp(18px);
-        line-height: vwp(44px);
-    }
     .p-flex {
         display: flex !important;
     }
@@ -302,21 +479,12 @@ p {
     .box-container {
         padding: vwp(40px) vwp(57px) 0;
     }
-    .btn {
-        border-radius: vwp(24px);
-        font-size: vwp(18px);
-        line-height: vwp(44px);
-        min-width: vwp(240px);
+    .d-hidden {
+        display: block!important;
     }
 
     p {
         font-size: vwp(16px);
-    }
-
-    .section__title {
-        font-size: vwp(23px);
-        line-height: vwp(27px);
-        margin: 0 0 vwp(12px) vwp(14px);
     }
 
     .p-col {
@@ -329,6 +497,7 @@ p {
 
         &-6 {
             width: 50%;
+            flex: 0 0 50%;
         }
 
         &-12 {
@@ -377,12 +546,6 @@ p {
     }
 }
 @media (max-width: $Mobile) {
-    .btn {
-        border-radius: vwm(10px);
-        font-size: vwm(9px);
-        line-height: vwm(22px);
-        min-width: vwm(117px);
-    }
     .container {
         width: 100%;
     }
@@ -407,12 +570,6 @@ p {
 
     p {
         font-size: vwm(7px);
-    }
-
-    .section__title {
-        font-size: vwm(16px);
-        line-height: vwm(19px);
-        margin: 0 0 vwm(8px) vwm(22px);
     }
 
     .m-col {
@@ -477,20 +634,8 @@ p {
         padding: vwm(20px) vwm(37px) 0 vwm(27);
     }
 
-    .btn {
-        border-radius: vwm(10px);
-        font-size: vwm(9px);
-        line-height: vwm(22px);
-        min-width: vwm(117px);
-    }
-
     p {
         font-size: vwm(7px);
     }
 
-    .section__title {
-        font-size: vwm(16px);
-        line-height: vwm(19px);
-        margin: 0 0 vwm(8px) vwm(22px);
-    }
 }

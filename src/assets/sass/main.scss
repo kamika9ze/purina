@@ -27,7 +27,7 @@ $browser-context-height: 7.28;
     @return $pixels / $context * 1vh;
 }
 
-$browser-context-planshet: 10.8;
+$browser-context-planshet: 8.34;
 
 @function vwp($pixels, $context: $browser-context-planshet) {
     @if (unitless($pixels)) {
@@ -42,7 +42,7 @@ $browser-context-planshet: 10.8;
 }
 
 
-$browser-context-mobile: 4.14;
+$browser-context-mobile: 3.2;
 
 @function vwm($pixels, $context: $browser-context-mobile) {
     @if (unitless($pixels)) {
