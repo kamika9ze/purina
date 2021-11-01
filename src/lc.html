@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="ru">
+	<head>
+		@@include('./parts/head.html')
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/css/bootstrap-select.min.css">
+	</head>
+	<body class="page_to page__lc">
+
+		<header id="header" class="container__header__lc">
+			@@include('./parts/header2.html')
+		</header>
+		<div class="img-back img-back6"></div>
+		<section class="section__lc">
+			<div class="img-back img-back7"></div>
+			<div class="container">
+				<div class="lc__content">
+					<div class="lc__content__data">
+						<div class="lc__content__data-boxed">
+							<div class="lc__content__img_lc">
+								<div class="lc__content-img"><img src="./assets/images/user.png"/></div>
+								<div class="lc__content-like">32<span class="ico ico-like"></span></div>
+							</div>
+							<div class="lc__content__data-box">
+								<div class="lc__content__data-name">Екатерина</div>
+								<div class="lc__content__data-surname">ВАСИЛЬЕВА</div>
+								<div class="d-flex d-f-column p-f-row m-f-column text-left">
+									<div class="lc__content__data-profession">Ортопедия и травматология</div>
+									<button class="btn btn-edit"><span class="ico ico-edit"></span></button>
+								</div>
+							</div>
+						</div>
+						<button class="btn btn-grey">создать свою визитку<span class="ico ico-arrow-left-white"></span></button>
+					</div>
+					<div class="lc__timetable">
+						<div class="lc__timetable-title">персональное расписание</div>
+						<div class="lc__timetable-tabs">
+							<div class="section__tabs">
+								<!-- Nav tabs -->
+								<ul class="nav nav-tabs" role="tablist">
+								  <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">15 декабря</a></li>
+								  <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">16 декабря</a></li>
+								</ul>
+								<div class="scroll__content">
+									<!-- Tab panes -->
+									<div class="tab-content">
+									  <div role="tabpanel" class="tab-pane active" id="home">
+										<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+											<div class="panel panel-default">
+											  <div class="panel-heading" role="tab" id="headingOne">
+												<h4 class="panel-title">
+												  <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+													Ортопедия и травматология
+												  </a>
+												</h4>
+											  </div>
+											  <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+												<div class="panel-body">
+													<div class="curs">
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+															</div>
+														</div>
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+															</div>
+														</div>
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+															</div>
+														</div>
+													</div>
+												</div>
+											  </div>
+											</div>
+											<div class="panel panel-default">
+											  <div class="panel-heading" role="tab" id="headingTwo">
+												<h4 class="panel-title">
+												  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+													Онкология
+												  </a>
+												</h4>
+											  </div>
+											  <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+												<div class="panel-body">
+													<div class="curs">
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																<a href="#" class="like"></a>
+															</div>
+														</div>
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																<a href="#" class="like active"></a>
+															</div>
+														</div>
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																<a href="#" class="like active"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											  </div>
+											</div>
+											<div class="panel panel-default">
+											  <div class="panel-heading" role="tab" id="headingThree">
+												<h4 class="panel-title">
+												  <a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+													Общая, абдоминальная и торакальная хирургия
+												  </a>
+												</h4>
+											  </div>
+											  <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+												<div class="panel-body">
+													<div class="curs">
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																<a href="#" class="like"></a>
+															</div>
+														</div>
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																<a href="#" class="like active"></a>
+															</div>
+														</div>
+														<div class="curs-item d-flex d-f-row d-aling-stretch">
+															<div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															<div class="curs-content">
+																<div class="d-col-12 d-flex d-f-row ">
+																	<div class="curs-time">12:00 - 12:30</div>
+																	<div class="curs-speaker">Мальцева А.Н.</div>
+																</div>
+																<div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																<a href="#" class="like active"></a>
+															</div>
+														</div>
+													</div>
+												</div>
+											  </div>
+											</div>
+											<div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree4">
+												  <h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree4" aria-expanded="false" aria-controls="collapseThree4">
+														Стоматология
+													</a>
+												  </h4>
+												</div>
+												<div id="collapseThree4" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree4">
+												  <div class="panel-body">
+													  <div class="curs">
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+													  </div>
+												  </div>
+												</div>
+											  </div>
+											  <div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree5">
+												  <h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree5" aria-expanded="false" aria-controls="collapseThree5">
+														Анестезиология
+													</a>
+												  </h4>
+												</div>
+												<div id="collapseThree5" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree5">
+												  <div class="panel-body">
+													  <div class="curs">
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+													  </div>
+												  </div>
+												</div>
+											  </div>
+											  <div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree6">
+												  <h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree6" aria-expanded="false" aria-controls="collapseThree6">
+														Интенсивная терапия
+													</a>
+												  </h4>
+												</div>
+												<div id="collapseThree6" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree6">
+												  <div class="panel-body">
+													  <div class="curs">
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+													  </div>
+												  </div>
+												</div>
+											  </div>
+											  <div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree7">
+												  <h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree7" aria-expanded="false" aria-controls="collapseThree7">
+														Ортопедия и травматология
+													</a>
+												  </h4>
+												</div>
+												<div id="collapseThree7" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree7">
+												  <div class="panel-body">
+													  <div class="curs">
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+													  </div>
+												  </div>
+												</div>
+											  </div>
+											  <div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree8">
+												  <h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree8" aria-expanded="false" aria-controls="collapseThree8">
+														Онкология
+													</a>
+												  </h4>
+												</div>
+												<div id="collapseThree8" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree8">
+												  <div class="panel-body">
+													  <div class="curs">
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+													  </div>
+												  </div>
+												</div>
+											  </div>
+											  <div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree9">
+												  <h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree9" aria-expanded="false" aria-controls="collapseThree9">
+														Общая, абдоминальная и торакальная хирургия
+													</a>
+												  </h4>
+												</div>
+												<div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree9">
+												  <div class="panel-body">
+													  <div class="curs">
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+													  </div>
+												  </div>
+												</div>
+											  </div>
+											  <div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree10">
+												  <h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree10" aria-expanded="false" aria-controls="collapseThree10">
+														Стоматология
+													</a>
+												  </h4>
+												</div>
+												<div id="collapseThree10" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree10">
+												  <div class="panel-body">
+													  <div class="curs">
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+													  </div>
+												  </div>
+												</div>
+											  </div>
+											  <div class="panel panel-default">
+												<div class="panel-heading" role="tab" id="headingThree11">
+												  <h4 class="panel-title">
+													<a class="collapsed" role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree11" aria-expanded="false" aria-controls="collapseThree11">
+														Анестезиология
+													</a>
+												  </h4>
+												</div>
+												<div id="collapseThree11" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree11">
+												  <div class="panel-body">
+													  <div class="curs">
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+														  <div class="curs-item d-flex d-f-row d-aling-stretch">
+															  <div class="curs-img"><img src="./assets/images/speaker.jpg" /></div>
+															  <div class="curs-content">
+																  <div class="d-col-12 d-flex d-f-row ">
+																	  <div class="curs-time">12:00 - 12:30</div>
+																	  <div class="curs-speaker">Мальцева А.Н.</div>
+																  </div>
+																  <div class="d-col-12 curs-lection">Интенсивная терапия</div>
+																  <a href="#" class="like active"></a>
+															  </div>
+														  </div>
+													  </div>
+												  </div>
+												</div>
+											  </div>
+										  </div>
+									  </div>
+									  <div role="tabpanel" class="tab-pane" id="profile">...</div>
+									</div>
+								</div>
+							</div>
+						</div>
+	
+					</div>					
+				</div>
+			</div>
+		</section>
+		<section class="section__promocode">
+			<div class="container">
+				<div class="section__title"><span>Промокоды</span></div>
+				<div class="table table__promocode">
+					<div class="tr">
+						<div class="td td__code-title"><span class="table__text">ПРОМОКОД 001</span></div>
+						<div class="td td__code"><span class="table__text">CW-664378-001</span><button class="btn btn-copy"><span class="ico ico-copy"></span></button></div>
+					</div>
+					<div class="tr">
+						<div class="td td__code-title"><span class="table__text">ПРОМОКОД 001</span></div>
+						<div class="td td__code"><span class="table__text">CW-664378-001</span><button class="btn btn-copy"><span class="ico ico-copy"></span></button></div>
+					</div>	
+				</div>
+			</div>
+		</section>
+		<section class="section__partners-quest">
+			<div class="container">
+				<div class="section__title"><span>Partners quest</span></div>
+				<div class="partners-quest-text">
+					<span class="text-shadow">EXprtise</span><span class="space"></span>Responsibility</br><span class="space"></span>vInnovation <span class="text-shadow">Science</span>	Trust
+				</div>
+				<div class="d-col-12 d-flex d-f-row m-f-column partners-quest-info">
+					<div class="d-col-6 m-col-12 partners-quest-info-text">
+						Вы раскрыли 5 принципа Pro Plan Partners<br><br>
+						Продолжайте посещать разные разделы сайта, найдите оставшиеся принципы и участвуйте в розыгрыше
+					</div>
+					<div class="d-col-6 m-col-12 partners-quest-info-btn"><button class="btn btn-grey2">ПОЛУЧИТЕ ПОДАРОК</button></div>
+				</div>
+			</div>
+		</section>
+		<link rel="stylesheet" href="./assets/css/jquery.mCustomScrollbar.css">
+		<!-- <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script> -->
+		<script type="text/javascript" src="./assets/js/jquery-1.9.1.min.js"></script>
+		<script type="text/javascript" src="./assets/js/slick.js"></script>
+		<script type="text/javascript" src="./assets/js/script.js"></script>
+		<script type="text/javascript" src="./assets/js/jquery.mCustomScrollbar.concat.min.js"></script>
+		<!-- Latest compiled and minified JavaScript -->
+		<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
+		<script>
+			$(document).ready(function () {
+				if($('html').width() > 1024) {
+					$(".scroll__content").mCustomScrollbar({
+						scrollInertia: 0
+					});
+				}
+			});
+		</script>
+	</body>
+</html>

@@ -17,6 +17,7 @@ $MobileLand: 828px;
 $MobileLandW: 1024px;
 $Inter: 'Inter';
 $font: 'Montserrat';
+$grey: #A9A5A5;
 body {
     color: #000;
     font: 15px/18px 'Montserrat';
@@ -53,6 +54,11 @@ body {
         margin: 0 vwm(-16px);
     }
 }
+@media(max-width: $Mobile) {
+    .slick-list {
+        // padding: 0!important;
+    }
+}
 .box-container {
     width: 100%;
     padding: vw(40px) vw(80px) 0 vw(60px);
@@ -60,6 +66,17 @@ body {
 }
 .scroll__content {
     position: relative;
+    width: calc(100% + 30px);
+    @media(max-width: $Planshet) {
+        width: 100%;
+    }
+}
+.mCSB_scrollTools .mCSB_dragger:hover .mCSB_dragger_bar {
+    background-color: #4c4a49!important;
+}
+.scroll__content .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+    width: 100%;
+    background: #fed989!important;
 }
 a {
     color: $TextColor;
@@ -79,6 +96,26 @@ button {
     font-family: 'Montserrat';
     cursor: pointer;
 }
+.table {
+    border: 1px solid #FED989;
+    .tr {
+        display: flex;
+        align-items: center;
+        border-bottom: 1px solid #FED989;
+        &:last-child {
+            border: 0;
+        }
+    }
+    .td {
+        position: relative;
+        border-right: 2px solid #FED989;
+        flex: 1 0 auto;
+        box-sizing: border-box;
+        &:last-child {
+            border: 0;
+        }
+    }
+}
 .btn {
     font-weight: 500;
     font-size: vw(16px);
@@ -89,6 +126,8 @@ button {
     text-transform: uppercase;
     text-decoration: none;
     border: 0;
+    background: none;
+    padding: 0;
     &-grey {
         background: linear-gradient(270deg, rgba(119, 116, 113, 0.474968) 0%, #141312 100%);
         border-radius: 5px;
@@ -195,6 +234,119 @@ button {
             font-size: vwm(18px);
         }
     }
+    &-grey2 {
+        background: linear-gradient(270deg, #111110 0%, #494746 50.88%, #171615 100%);
+        border-radius: 5px;
+        width: vw(280px);
+        line-height: vw(60px);
+        color: $gold;
+        border: 1px solid transparent;
+        -moz-border-image: -moz-linear-gradient(90deg, rgba(254, 217, 137, 0), rgba(254, 217, 137, 100), rgba(254, 217, 137, 0));
+        -webkit-border-image: -webkit-linear-gradient(90deg, rgba(254, 217, 137, 0), rgba(254, 217, 137, 100), rgba(254, 217, 137, 0));
+        border-image: linear-gradient(90deg, rgba(254, 217, 137, 0), rgba(254, 217, 137, 100), rgba(254, 217, 137, 0));
+        border-image-slice: 1;
+        &:hover {
+            background: linear-gradient(270deg, #211F1F 0%, #514938 50.88%, #211F1F 100%);
+            border: 1px solid #FED989;
+        }
+        .ico-arrow-left-white {
+            top: vw(-2px);
+            margin-left: vw(21px);
+            position: relative;
+        }
+        @media(max-width: $Planshet) {
+            width: vwp(280px);
+            line-height: vwp(60px);
+            .ico-arrow-left-white {
+                top: vwp(-2px);
+                margin-left: vwp(21px);
+            }
+        }
+        
+        @media(max-width: $Mobile) {
+            width: 100%;
+            line-height: vwm(60px);
+            .ico-arrow-left-white {
+                top: vwm(-2px);
+                margin-left: vwm(21px);
+            }
+        }
+    }
+    &-white {
+        background: none;
+        border-radius: 5px;
+        width: vw(200px);
+        line-height: vw(60px);
+        color: #FFFFFF;
+        border: 2px solid #A9A5A5;
+        color: #A9A5A5;
+        font-size: vw(20px);
+        &:hover {
+            background: #A9A5A5;
+            color: #000;
+        }
+        @media(max-width: $Planshet) {
+            width: vwp(200px);
+            line-height: vwp(60px);
+        }
+        
+        @media(max-width: $Mobile) {
+            width: 100%;
+            line-height: vwm(60px);
+        }
+    }
+    &-border_gold {
+        background: none;
+        border-radius: 5px;
+        min-width: vw(200px);
+        font-weight: 500;
+        font-size: vw(16px);
+        line-height: vw(60px);
+        border: 2px solid #FED989;
+        color: #fff;
+        text-transform: uppercase;
+        &:hover {
+            background: #FED989;
+            color: #000;
+        }
+        @media(max-width: $Planshet) {
+            width: vwp(200px);
+            line-height: vwp(50px);
+            font-size: vwp(16px);
+        }
+        
+        @media(max-width: $Mobile) {
+            width: 100%;
+            line-height: vwm(35px);
+            font-size: vwm(10px);
+        }
+    }
+    &-gold {
+        background: none;
+        border-radius: 5px;
+        min-width: vw(200px);
+        font-weight: 500;
+        font-size: vw(16px);
+        line-height: vw(60px);
+        background: $gold;
+        color: #000;
+        text-transform: uppercase;
+        &:hover {
+            background: #FFE7B4;
+            color: #000;
+        }
+        @media(max-width: $Planshet) {
+            width: vwp(200px);
+            line-height: vwp(50px);
+            font-size: vwp(16px);
+        }
+        
+        @media(max-width: $Mobile) {
+            width: 100%;
+            line-height: vwm(35px);
+            font-size: vwm(10px);
+        }
+    }
     @media(max-width: $Planshet) {
         font-size: vwp(16px);
     }
@@ -216,9 +368,11 @@ p {
     font-weight: 500;
     font-size: vw(25px);
     line-height: vw(30px);
-    display: inline-block;
+    display: flex;
+    flex-direction: row;
     color: $gold;
     position: relative;
+    align-items: center;
     span {
         font-weight: 800;
         font-size: vw(80px);
@@ -239,26 +393,40 @@ p {
             line-height: vwm(37px);        
         }
     }
-    &:after {
-        content: "";
-        width: vw(142.62px);
-        height: vw(2px);
-        background: linear-gradient(90deg, #000000 0%, #FED989 49.04%, #000000 100.63%);
-        transform: rotate(-66.25deg);
-        position: absolute;
-        right: vw(-125px);
-        top: vw(67px);
-        @media (max-width: $Planshet) {
-            width: vwp(142.62px);
-            height: vwp(2px);
-            right: vwp(-125px);
-            top: vwp(45px);
+    .section__title-box {
+        position: relative;
+        &:after {
+            content: "";
+            width: vw(142.62px);
+            height: vw(2px);
+            background: linear-gradient(90deg, #000000 0%, #FED989 49.04%, #000000 100.63%);
+            transform: rotate(-66.25deg);
+            position: absolute;
+            right: vw(-125px);
+            top: vw(67px);
+            @media (max-width: $Planshet) {
+                width: vwp(142.62px);
+                height: vwp(2px);
+                right: vwp(-125px);
+                top: vwp(45px);
+            }
+            @media (max-width: $Mobile) {
+                width: vwm(50px);
+                height: vwm(2px);
+                right: vwm(-38px);
+                top: vwm(20px);   
+            }
         }
-        @media (max-width: $Mobile) {
-            width: vwm(50px);
-            height: vwm(2px);
-            right: vwm(-125px);
-            top: vwm(67px);   
+    }
+    &-position {
+        font-weight: 500;
+        font-size: vw(35px);
+        line-height: vw(43px);
+        color: $gold;
+        padding-left: vw(138px);
+        @media(max-width: $Mobile) {
+            padding: vwm(15px) 0 0;
+            font-size: vwm(18px);
         }
     }
     div {
@@ -281,6 +449,13 @@ p {
             top: vwm(-2px);   
         }
     }
+    @media(max-width: $Mobile) {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+.text-shadow {
+    text-shadow: 1px 0 1px #a9a5a5, 0 1px 1px #a9a5a5, -1px 0 1px #a9a5a5, 0 -1px 1px #a9a5a5, 0 -2px 1px #a9a5a5;
 }
 .scroll__content, .scroll__content * {
     transition: none;
@@ -340,9 +515,9 @@ p {
     }
     
     @media(max-width: $Mobile) {
-        width: vw(50px);
-        height: vw(50px);
-        background-size: vw(8px) vw(16px);
+        width: vwm(50px);
+        height: vwm(50px);
+        background-size: vwm(8px) vwm(16px);
         right: calc(50% - 75px);
         &.slick-prev {
             left: calc(50% - 75px);
@@ -351,6 +526,9 @@ p {
 }
 .openMenu {
     overflow-y: hidden;
+}
+.d-f-wrap {
+    flex-wrap: wrap;
 }
 .d-hidden {
     display: none !important;
@@ -381,6 +559,9 @@ p {
 }
 .d-f-justify-center {
     justify-content: center;
+}
+.d-f-between {
+    justify-content: space-between;
 }
 .justify-center {
     justify-content: center;

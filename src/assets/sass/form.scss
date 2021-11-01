@@ -3,6 +3,46 @@ form, input, button, textarea {
 }
 .form__item {
     position: relative;
+    margin-bottom: vw(21px);
+    @media(max-width: $Planshet) {
+        margin-bottom: vwp(25px);
+    }
+    
+    @media(max-width: $Mobile) {
+        margin-bottom: vwm(10px);
+    }
+}
+label {
+    display: block;
+    padding-left: vw(50px);
+    position: relative;
+    @media(max-width: $Planshet) {
+        padding-left: vwp(34px);
+    }
+    
+    @media(max-width: $Mobile) {
+        padding-left: vwm(20px);
+    }
+}
+input {
+    font-size: vw(30px);
+    color: $grey;
+    border: 1px solid $grey;
+    background: rgba(0, 0, 0, 0.6);
+    height: vw(70px);
+    padding: vw(5px) vw(10px);
+    box-sizing: border-box;
+    @media(max-width: $Planshet) {
+        font-size: vwp(16px);
+        height: vwp(50px);
+        padding: vwp(5px) vwp(10px);
+    }
+    
+    @media(max-width: $Mobile) {
+        font-size: vwm(14px);
+        height: vwm(36px);
+        padding: vwm(5px) vwm(10px);
+    }
 }
 input[type="checkbox"],
 input[type="radio"] {
@@ -10,31 +50,62 @@ input[type="radio"] {
 }
 input[type="checkbox"] + label, 
 input[type="radio"] + label {
-  cursor: pointer;
-  font-size: vw(16);
-  color: rgb(255, 255, 255);
-  line-height: 1;
-  text-align: left;
-  position: relative;
-  a {
-	font-size: vw(16);
-  	color: rgb(255, 255, 255);
-  	text-decoration: underline;
-  	&:hover {
-  		text-decoration: none;
-  	}
-  }
+    cursor: pointer;
+    font-size: vw(16);
+    color: rgb(255, 255, 255);
+    line-height: 1;
+    text-align: left;
+    position: relative;
+    a {
+        font-size: vw(16);
+        color: rgb(255, 255, 255);
+        text-decoration: underline;
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    @media(max-width: $Planshet) {
+        font-size: vwp(14px);
+        a {
+            font-size: vwp(14px);
+        }
+    }
+
+    @media(max-width: $Mobile) {
+        font-size: vwm(10px);
+        a {
+            font-size: vwm(10px);
+        }
+    }
 }
 input[type="checkbox"] + label::before,
 input[type="radio"] + label::before {
     content: "";
     display: inline-block;
-    height: vw(22);
-    width: vw(22);
-    margin: 0 vw(17) 0 0;
+    height: vw(26);
+    width: vw(26);
+    margin: 0 vw(20) 0 0;
     background-repeat: no-repeat;
-    border: vw(2) solid #fff;
+    border: vw(2) solid $gold;
     border-radius: vw(5);
+    float: left;
+    position: absolute;
+    left: 0;
+    @media(max-width: $Planshet) {
+        height: vwp(21px);
+        width: vwp(21px);
+        margin: 0 vwp(17px) 0 0;
+        border: vwp(2px) solid $gold;
+        border-radius: vwp(5);
+    }
+    
+    @media(max-width: $Mobile) {
+        height: vwm(11px);
+        width: vwm(11px);
+        margin: 0 vwm(7px) 0 0;
+        border: vwm(2px) solid $gold;
+        border-radius: vwm(3);
+    }
 }
 input[type="checkbox"] + label::before {
 }
@@ -43,14 +114,26 @@ input[type="radio"] + label::before {
 input[type="checkbox"]:checked + label::after {
 	content: "";
 	display: inline-block;
-	height: vw(17);
-	width: vw(23);
-	background: #ccc;
+	height: vw(13px);
+	width: vw(18px);
 	position: absolute;
-	left: 0;
-	top: vw(1);
-	background: url('../images/lead/check.svg');
+	left: vw(6px);
+	top: vw(8px);
+	background-image: url("data:image/svg+xml,%3Csvg width='18' height='13' viewBox='0 0 18 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17 1L6 12L1 7' stroke='%23FED989' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
     background-size: 100% 100%;
+    @media(max-width: $Planshet) {
+        height: vwp(10px);
+        width: vwp(14px);
+        left: vwp(6px);
+        top: vwp(8px);
+    }
+    
+    @media(max-width: $Mobile) {
+        height: vwm(6px);
+        width: vwm(8px);
+        left: vwm(4px);
+        top: vwm(4px);
+    }
 }
 input[type="radio"]:checked + label::before {
 }
@@ -59,4 +142,9 @@ input[type="checkbox"]:disabled + label::before {
 input[type="checkbox"]:checked:disabled + label::before {
 }
 input[type="radio"]:disabled + label::before {
+}
+@media(max-width: $Planshet) {
+}
+
+@media(max-width: $Mobile) {
 }

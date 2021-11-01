@@ -1,3 +1,291 @@
+.modal-open {
+    overflow: hidden;
+}
 .modal {
     display: none;
+    z-index: 5;
+    &.in {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        padding: vw(50px) 0 0;
+        box-sizing: border-box;
+    }
+    .section__title span {
+        color: #292929;
+    }
+    .modal-dialog {
+        width: vw(900px);
+        display: inline-block;
+        background: #292929;
+        border: 2px solid $gold;
+        padding: vw(105px) vw(85px) vw(50px);
+        text-align: center;
+        box-sizing: border-box;
+        @media(max-width: $Planshet) {
+            width: vwp(566px);
+        }
+        @media(max-width: $Mobile) {
+            width: vwm(288px);
+        }
+        .modal-container {
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            align-items: center;
+            .section__title {
+                text-align: left;
+                margin-bottom: vw(50px);
+                @media(max-width: $Planshet) {
+                    margin-bottom: vwp(30px);
+                }
+                @media(max-width: $Mobile) {
+                    margin-bottom: vwm(35px);
+                }
+            }
+            p {
+                text-align: center;
+                font-size: vw(25px);
+                line-height: vw(30px);
+                margin-bottom: vw(73px);
+                color: $White;
+                margin: 0 0 vw(73px);
+                @media(max-width: $Planshet) {
+                    font-size: vwp(16px);
+                    line-height: vwp(20px);
+                    margin: 0 0 vwp(33px); 
+                }
+                @media(max-width: $Mobile) {
+                    font-size: vwm(14px);
+                    line-height: vwm(17px);
+                    margin: 0 0 vwm(33px); 
+                }
+            }
+            .btn-grey {
+                margin: 0 0 vw(50px);
+                min-width: vw(560px);
+                @media(max-width: $Planshet) {
+                    margin: 0 0 vwp(15px);
+                    width: vwp(256px);
+                    line-height: vwp(35px);
+                    font-size: vwp(10px);
+                }
+                @media(max-width: $Mobile) {
+                    font-size: vwm(10px);
+                    margin: 0 0 vwm(15px);
+                    width: vwm(186px);
+                    line-height: vwm(35px);
+                }
+                &:active, &.active {
+                    background: #FED989;
+                    color: #000;
+                }
+            }
+            .btn-grey2 {
+                margin: 0 0 vw(50px);
+                min-width: vw(430px);
+                @media(max-width: $Planshet) {
+                    margin: 0 0 vwp(15px);
+                    width: vwp(256px);
+                    line-height: vwp(35px);
+                    font-size: vwp(10px);
+                }
+                @media(max-width: $Mobile) {
+                    margin: 0 0 vwm(15px);
+                    width: vwm(186px);
+                    font-size: vwm(10px);
+                    line-height: vwm(35px); 
+                }
+            }
+            .modal-content-box {
+                background: rgba(0, 0, 0, 0.6);
+                border: 1px solid $gold;
+                padding: vw(64px) vw(40px) vw(10px);
+                box-sizing: border-box;
+                margin: 0 0 vw(50px);  
+                min-height: vw(260px); 
+                font-weight: 500;
+                font-size: vw(25px);
+                line-height: vw(30px);  
+                text-align: left;
+                color: $White;         
+                @media(max-width: $Planshet) {
+                    padding: vwp(19px) vwp(19px) vwp(10px);
+                    margin: 0 0 vwp(29px);  
+                    min-height: vwp(125px); 
+                    font-size: vwp(16px);
+                    line-height: vwp(20px);
+                }
+                @media(max-width: $Mobile) {
+                    padding: vwm(17px) vwm(19px) vwm(10px);
+                    margin: 0 0 vwm(30px);  
+                    min-height: vwm(125px); 
+                    font-size: vwm(12px);
+                    line-height: vwm(15px);
+                }  
+            }
+        }
+    }
+}
+#login {
+    .logo-max {
+        width: vw(227px);
+        height: vw(134px);
+        position: relative;
+        top: 0;
+        left: inherit;
+        margin-bottom: vw(80px);
+        @media(max-width: $Planshet) {
+            width: vwp(119px);
+            height: vwp(70px);
+            margin-bottom: vwp(35px);
+        }
+        @media(max-width: $Mobile) {
+            width: vwm(119px);
+            height: vwm(70px);
+            margin-bottom: vwm(12px);
+        }  
+    }
+    .modal-dialog {
+        padding-bottom: vw(128px);
+        @media(max-width: $Planshet) {
+        }
+        @media(max-width: $Mobile) {
+        } 
+    }
+    input {
+        min-width: vw(630px);
+        text-align: center;
+        text-transform: uppercase;
+        @media(max-width: $Planshet) {
+        }
+        @media(max-width: $Mobile) {
+        } 
+    }
+    .form__item-entry {
+        padding: vw(20px) 0 0;
+        div {
+            font-weight: 500;
+            font-size: vw(30px);
+            line-height: vw(37px);
+            color: $gold;
+            text-transform: uppercase;
+        }
+        @media(max-width: $Planshet) {
+            padding: vwp(15px) 0 0;
+            div {
+                font-size: vwp(16px);
+                line-height: vwp(20px);
+            }
+        }
+        @media(max-width: $Mobile) {
+            padding: vwm(10px) 0 0;
+            div {
+                font-size: vwm(12px);
+                line-height: vwm(30px);
+            }
+            .ico-arrow-left-gold {
+                top: vwm(3px);
+                position: relative;
+            }
+        } 
+    }
+    .btn-entry {
+        font-weight: 500;
+        font-size: vw(18px);
+        line-height: vw(22px);
+        color: #fff;
+        background: none;
+        border: 0;
+        padding: 0;
+        text-transform: uppercase;
+        &:hover {
+            text-decoration: underline;
+        }
+        @media(max-width: $Planshet) {
+            font-size: vwp(14px);
+            line-height: vwp(17px);
+        }
+        @media(max-width: $Mobile) {
+            font-size: vwm(10px);
+            line-height: vwm(12px);
+        } 
+    }
+}
+#reg {
+    .modal-dialog {
+        width: vw(1320px);
+        padding: vw(93px) vw(55px);
+        .d-col-6 {
+            padding: 0 vw(29px);
+        }
+        .ico-profile {
+            width: vw(182px);
+            height: vw(182px);
+            margin-bottom: vw(80px);
+        }
+        .btn {
+            width: 100%;
+        }
+        input {
+            width: 100%;
+            text-align: center;
+        }
+        label {
+            text-align: left;
+            font-weight: 500;
+            font-size: vw(16px);
+            line-height: 200%;
+            color: $grey;
+            letter-spacing: vw(-0.5px);
+        }
+        @media(max-width: $Planshet) {
+            width: vwp(566px);
+            padding: vwp(45px) vwp(80px);
+            .d-col-6 {
+                padding: 0 vwp(0px);
+            }
+            .ico-profile {
+                width: vwp(102px);
+                height: vwp(102px);
+                margin-bottom: vwp(45px);
+            }
+            label {
+                font-size: vwp(14px);
+                letter-spacing: vwp(-0.5px);
+            }
+            .btn-border_gold {
+                margin-bottom: vwp(30px);
+            }
+        }
+    
+        @media(max-width: $Mobile) {
+            width: vwm(288px);
+            padding: vwm(24px) vwm(20px);
+            .d-col-6 {
+                padding: 0 vwm(0px);
+            }
+            .ico-profile {
+                width: vwm(50px);
+                height: vwm(50px);
+                margin-bottom: vwm(14px);
+            }
+            label {
+                font-size: vwm(10px);
+                letter-spacing: vwm(-0.5px);
+                line-height: 150%;
+            }
+            .btn-border_gold {
+                margin: 0 auto vwm(18px);
+                width: vwm(186px);
+            }
+            .btn-gold {
+                width: vwm(186px);          
+                margin: 0 auto vwm(0px);      
+            }
+        }
+    }
 }

@@ -78,6 +78,14 @@
     display: inline-block;
     margin: vw(-3px) 0 0 vw(26px);
     background-image: url("data:image/svg+xml,%3Csvg width='10' height='18' viewBox='0 0 10 18' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1.10394 16.5483L8.5625 9.03196L1.10394 1.51562' stroke='%23FED989' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    @media(max-width: $Planshet) {
+        width: vwp(9px);
+        height: vwp(17px);
+    }
+    @media(max-width: $Mobile) {
+        width: vwm(9px);
+        height: vwm(17px);
+    }
 }
 .ico-play2-gold {
     width: vw(14px);
@@ -139,5 +147,33 @@
     @media(max-width: $Mobile) {
         width: vwm(55px);
         height: vwm(55px);
+    }
+}
+.ico-edit {
+    width: vw(20px);
+    height: vw(20px);
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3Csvg width='20' height='20' viewBox='0 0 20 20' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M17.5 11.3833V15.8333C17.5 16.7538 16.7538 17.5 15.8333 17.5H4.16667C3.24619 17.5 2.5 16.7538 2.5 15.8333V4.16667C2.5 3.24619 3.24619 2.5 4.16667 2.5H8.61667' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M15 1.66663L18.3333 4.99996L10 13.3333H6.66666V9.99996L15 1.66663V1.66663Z' stroke='white' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    @media(max-width: $Planshet) {
+        width: vwp(20px);
+        height: vwp(20px);
+    }
+    @media(max-width: $Mobile) {
+        width: vwm(20px);
+        height: vwm(20px);
+    }
+}
+.ico-copy {
+    width: vw(24px);
+    height: vw(24px);
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3Csvg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M9 13C9 14.1046 9.89543 15 11 15H20C21.1046 15 22 14.1046 22 13V4C22 2.89543 21.1046 2 20 2H11C9.89543 2 9 2.89543 9 4V13Z' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M5 9H4C2.89543 9 2 9.89543 2 11V20C2 21.1046 2.89543 22 4 22H13C14.1046 22 15 21.1046 15 20V19' stroke='white' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+    @media(max-width: $Planshet) {
+        width: vwp(24px);
+        height: vwp(24px);
+    }
+    @media(max-width: $Mobile) {
+        width: vwm(24px);
+        height: vwm(24px);
     }
 }
