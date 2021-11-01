@@ -853,6 +853,20 @@ p {
       width: 7.5vw;
       height: 7.5vw; } }
 
+.ico-arrow {
+  width: 1.875vw;
+  height: 1.71875vw;
+  display: inline-block;
+  background-image: url("data:image/svg+xml,%3Csvg width='36' height='33' viewBox='0 0 36 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.75 16.61L24.41 32.72H21.98L32.51 17.6H0.920001V15.8H32.69L21.98 0.769998H24.41L35.75 16.61Z' fill='white'/%3E%3C/svg%3E%0A"); }
+  @media (max-width: 1023px) {
+    .ico-arrow {
+      width: 4.3165467626vw;
+      height: 3.9568345324vw; } }
+  @media (max-width: 728px) {
+    .ico-arrow {
+      width: 11.25vw;
+      height: 10.3125vw; } }
+
 header {
   display: flex;
   flex-direction: row;
@@ -1442,15 +1456,62 @@ header {
   transform: rotate(-90deg);
   background-color: #FED989; }
 
+@media (min-width: 1023px) {
+  .html__plug {
+    height: 100%; }
+  .page__plug {
+    height: 100%; }
+    .page__plug .logo-min {
+      width: 15.0520833333vw;
+      height: 8.8541666667vw;
+      display: inline-block; }
+    .page__plug .header__title h1 {
+      font-size: 1.71875vw;
+      line-height: 2.0833333333vw; }
+    .page__plug .header__title .ico {
+      width: 5vw;
+      height: 5.4166666667vw;
+      margin-right: 1.0416666667vw; }
+    .page__plug .header__title:before, .page__plug .header__title:after {
+      width: 11.4583333333vw; }
+    .page__plug .header__title:before {
+      left: -13.0208333333vw; }
+    .page__plug .header__title:after {
+      right: -13.0208333333vw; }
+    .page__plug .plug__main-title1 {
+      font-size: 7.6851851852vh;
+      line-height: 9.1666666667vh;
+      padding: 9.6296296296vh 46.2962962963vh 8.6111111111vh 0vw; }
+    .page__plug .plug__main-title2 {
+      font-size: 4.8148148148vh;
+      line-height: 6.6666666667vh;
+      padding: 0vw 55.5555555556vh 8.3333333333vh 0vw; }
+    .page__plug .plug__main-img {
+      width: 100%;
+      height: 53.8888888889vh;
+      bottom: 0;
+      left: 0; }
+    .page__plug .container {
+      width: 100%;
+      padding: 0vw 2.8645833333vw 0vw; }
+    .page__plug header {
+      padding-top: 6.6666666667vh; }
+    .page__plug .header__date > span {
+      font-size: 5.4166666667vw;
+      line-height: 6.6145833333vw; }
+    .page__plug .header__date {
+      font-size: 2.34375vw;
+      line-height: 2.8645833333vw; } }
+
 body {
   overflow-x: hidden; }
 
 .logo-main {
   background: url("assets/LOGO-main.png");
   background-size: cover;
-  width: 32.967032967vh;
-  height: 23.6263736264vh;
-  margin: 14.1483516484vh 0 5.4945054945vh; }
+  width: 22.2222222222vh;
+  height: 15.9259259259vh;
+  margin: 9.537037037vh 0 3.7037037037vh; }
 
 /*end page main*/
 .scroll__content .mCSB_scrollTools {
@@ -3460,30 +3521,32 @@ body {
         margin-bottom: 3.125vw;
         padding: 3.125vw; } }
 
+.plug__main-img {
+  width: 66.6666666667vw;
+  height: 20.2083333333vw;
+  max-width: 100%;
+  background-image: url("../images/plug__main-img.jpg");
+  background-size: cover;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 1; }
+  @media (max-width: 1023px) {
+    .plug__main-img {
+      width: 100%;
+      height: 94.964028777vw;
+      top: 14.9880095923vw;
+      bottom: initial;
+      background-image: url("../images/plug__main-img-p.jpg"); } }
+  @media (max-width: 728px) {
+    .plug__main-img {
+      width: 100%;
+      height: 123.75vw;
+      top: 65.625vw;
+      background-image: url("../images/plug__main-img-m.jpg"); } }
+
 .plug__main {
   position: relative; }
-  .plug__main .plug__main-img {
-    width: 66.6666666667vw;
-    height: 20.2083333333vw;
-    max-width: 100%;
-    background-image: url("../images/plug__main-img.jpg");
-    background-size: cover;
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    z-index: 1; }
-    @media (max-width: 1023px) {
-      .plug__main .plug__main-img {
-        width: 100%;
-        height: 94.964028777vw;
-        top: 0;
-        bottom: initial;
-        background-image: url("../images/plug__main-img-p.jpg"); } }
-    @media (max-width: 728px) {
-      .plug__main .plug__main-img {
-        width: 100%;
-        height: 123.75vw;
-        background-image: url("../images/plug__main-img-m.jpg"); } }
   .plug__main-title1 {
     font-size: 2.8645833333vw;
     line-height: 3.4375vw;
@@ -3496,7 +3559,7 @@ body {
       .plug__main-title1 {
         font-size: 6.5947242206vw;
         line-height: 7.9136690647vw;
-        padding: 59.9520383693vw 0vw 2.9976019185vw 0; } }
+        padding: 62.3501199041vw 0vw 2.9976019185vw 0; } }
     @media (max-width: 728px) {
       .plug__main-title1 {
         font-size: 6.25vw;

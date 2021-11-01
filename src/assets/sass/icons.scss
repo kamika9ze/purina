@@ -177,3 +177,17 @@
         height: vwm(24px);
     }
 }
+.ico-arrow {
+    width: vw(36px);
+    height: vw(33px);
+    display: inline-block;
+    background-image: url("data:image/svg+xml,%3Csvg width='36' height='33' viewBox='0 0 36 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M35.75 16.61L24.41 32.72H21.98L32.51 17.6H0.920001V15.8H32.69L21.98 0.769998H24.41L35.75 16.61Z' fill='white'/%3E%3C/svg%3E%0A");
+    @media(max-width: $Planshet) {
+        width: vwp(36px);
+        height: vwp(33px);
+    }
+    @media(max-width: $Mobile) {
+        width: vwm(36px);
+        height: vwm(33px);
+    }
+}

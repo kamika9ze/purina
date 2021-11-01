@@ -13,7 +13,7 @@ $browser-context-width: 19.2;
 
     @return $pixels / $context * 1vw;
 }
-$browser-context-height: 7.28;
+$browser-context-height: 10.80;
 
 @function vh($pixels, $context: $browser-context-height) {
     @if (unitless($pixels)) {

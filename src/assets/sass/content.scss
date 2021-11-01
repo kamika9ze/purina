@@ -2501,32 +2501,33 @@ section {
         }
     }
 }
+.plug__main-img {
+    width: vw(1280px);
+    height: vw(388px);
+    max-width: 100%;
+    background-image: url('../images/plug__main-img.jpg');
+    background-size: cover;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    z-index: 1;
+    @media(max-width: $Planshet) {
+        width: 100%;
+        height: vwp(792px);
+        top: vwp(125px);
+        bottom: initial;
+        background-image: url('../images/plug__main-img-p.jpg');
+    }
+    
+    @media(max-width: $Mobile) {
+        width: 100%;
+        height: vwm(396px);
+        top: vwm(210px);
+        background-image: url('../images/plug__main-img-m.jpg');
+    }
+}
 .plug__main {
     position: relative;
-    .plug__main-img {
-        width: vw(1280px);
-        height: vw(388px);
-        max-width: 100%;
-        background-image: url('../images/plug__main-img.jpg');
-        background-size: cover;
-        position: absolute;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
-        @media(max-width: $Planshet) {
-            width: 100%;
-            height: vwp(792px);
-            top: 0;
-            bottom: initial;
-            background-image: url('../images/plug__main-img-p.jpg');
-        }
-        
-        @media(max-width: $Mobile) {
-            width: 100%;
-            height: vwm(396px);
-            background-image: url('../images/plug__main-img-m.jpg');
-        }
-    }
     &-title1 {
         font-size: vw(55px);
         line-height: vw(66px);
@@ -2538,7 +2539,7 @@ section {
         @media(max-width: $Planshet) {
             font-size: vwp(55px);
             line-height: vwp(66px);
-            padding: vwp(500px) vwp(0px) vwp(25px) 0;
+            padding: vwp(520px) vwp(0px) vwp(25px) 0;
         }
     
         @media(max-width: $Mobile) {
