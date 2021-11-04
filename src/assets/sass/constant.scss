@@ -369,13 +369,13 @@ p {
     font-size: vw(25px);
     line-height: vw(30px);
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     color: $gold;
     position: relative;
-    align-items: center;
+    align-items: flex-start;
     span {
         font-weight: 800;
-        font-size: vw(80px);
+        font-size: vw(72px);
         line-height: vw(98px);
         align-items: center;
         color: #000;
@@ -383,6 +383,7 @@ p {
         text-shadow: 1px 0 1px #a9a5a5, 0 1px 1px #a9a5a5, -1px 0 1px #a9a5a5, 0 -1px 1px #a9a5a5, 0 -2px 1px #a9a5a5;
         display: inline-block;
         position: relative;
+        margin-right: vw(110px);
         @media (max-width: $Planshet) {
             font-size: vwp(55px);
             line-height: vwp(67px);
@@ -392,18 +393,15 @@ p {
             font-size: vwm(30px);
             line-height: vwm(37px);        
         }
-    }
-    .section__title-box {
-        position: relative;
         &:after {
             content: "";
-            width: vw(142.62px);
+            width: vw(123px);
             height: vw(2px);
             background: linear-gradient(90deg, #000000 0%, #FED989 49.04%, #000000 100.63%);
             transform: rotate(-66.25deg);
             position: absolute;
-            right: vw(-125px);
-            top: vw(67px);
+            right: vw(-135px);
+            top: vw(50px);
             @media (max-width: $Planshet) {
                 width: vwp(142.62px);
                 height: vwp(2px);
@@ -417,6 +415,16 @@ p {
                 top: vwm(20px);   
             }
         }
+        &:last-child {
+            margin: 0;
+            &:after {
+                display: none;
+            }
+        }
+        
+    }
+    .section__title-box {
+        position: relative;
     }
     &-position {
         font-weight: 500;
@@ -437,7 +445,6 @@ p {
         display: block;
         color: $gold;
         position: relative;
-        top: vw(-5px);
         @media (max-width: $Planshet) {
             font-size: vwp(20px);
             line-height: vwp(25px);

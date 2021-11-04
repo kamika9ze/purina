@@ -730,22 +730,22 @@ header.container__header__lc .container {
     .page__plug {
         height: 100%;
         .logo-min {
-            width: vw(289px);
-            height: vw(170px);
+            width: vh(289px);
+            height: vh(170px);
             display: inline-block;
         }
         .header__title {
             h1 {
-                font-size: vw(33px);
-                line-height: vw(40px);
+                font-size: vh(33px);
+                line-height: vh(40px);
             }
             .ico {
-                width: vw(96px);
-                height: vw(104px);
-                margin-right: vw(20px);
+                width: vh(96px);
+                height: vh(104px);
+                margin-right: vh(20px);
             }
             &:before, &:after {
-                width: vw(220px);
+                width: vh(220px);
             }
             &:before {
                 left: vw(-250px);
@@ -757,12 +757,12 @@ header.container__header__lc .container {
         .plug__main-title1 {
             font-size: vh(83px);
             line-height: vh(99px);
-            padding: vh(104px) vh(500px) vh(93px) vw(0px);
+            padding: vh(104px) vw(500px) vh(93px) vw(0px);
         }
         .plug__main-title2 {
             font-size: vh(52px);
             line-height: vh(72px);
-            padding: vw(0px) vh(600px) vh(90px) vw(0px);
+            padding: vw(0px) vw(600px) vh(90px) vw(0px);
         }
         .plug__main-img {
             width: 100%;
@@ -782,8 +782,8 @@ header.container__header__lc .container {
             line-height: vw(127px);
         }
         .header__date {
-            font-size: vw(45px);
-            line-height: vw(55px);
+            font-size: vh(45px);
+            line-height: vh(55px);
         }
     }
 }

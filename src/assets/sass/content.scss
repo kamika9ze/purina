@@ -57,7 +57,7 @@ section {
     height: vw(616px);
     background-image: url('../images/main__ban.jpg');
     background-size: 100% 100%;
-    margin-left: vw(-20px);
+    margin-left: vw(0px);
     @media(max-width: $Planshet) {
         width: 100%;
         height: vwp(360px);
@@ -76,7 +76,7 @@ section {
     display: flex;
     justify-content: center;
     text-align: center;
-    margin-top: vw(-139px);
+    margin-top: vw(-83px);
     position: relative;
     z-index: 5;
     ul {
@@ -797,6 +797,9 @@ section {
 .section__items {
     position: relative;
     padding-bottom: vw(129px);
+    .section__title {
+        margin-bottom: vw(44px);
+    }
     .section__items-title {
         font-weight: 500;
         font-size: vw(25px);
@@ -1205,7 +1208,8 @@ section {
         @media(max-width: $Mobile) {
             margin: 0 0 vwm(42px);
             a {
-                margin: 0 vwm(16px)
+                margin: 0 vwm(14px);
+                padding: 0 vwm(15px);
             }
         }
     }
@@ -1506,6 +1510,7 @@ section {
     }
     @media(max-width: $Mobile) {
         padding: vwm(5px) 0 vwm(22px);
+        overflow: hidden;
         p {
             font-size: vwm(14px);
             line-height: vwm(21px);
@@ -2523,7 +2528,7 @@ section {
         width: 100%;
         height: vwm(396px);
         top: vwm(210px);
-        background-image: url('../images/plug__main-img-m.jpg');
+        background-image: url('../images/plug__main-img-p.jpg');
     }
 }
 .plug__main {
