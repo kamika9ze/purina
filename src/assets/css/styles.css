@@ -381,7 +381,7 @@ p {
       background: linear-gradient(90deg, #000000 0%, #FED989 49.04%, #000000 100.63%);
       transform: rotate(-66.25deg);
       position: absolute;
-      right: -7.03125vw;
+      right: -6.5104166667vw;
       top: 2.6041666667vw; }
       @media (max-width: 1023px) {
         .section__title span:after {
@@ -1969,7 +1969,7 @@ body {
     left: 0;
     width: 100%;
     height: 62.1614583333vw;
-    background: radial-gradient(83.96% 30.88% at 77.84% 85.25%, #393939 0%, rgba(0, 0, 0, 0) 100%); }
+    background: radial-gradient(83.96% 30.88% at 77.84% 85.25%, #211D1D 0%, rgba(0, 0, 0, 0) 100%); }
     @media (max-width: 728px) {
       .section__timetable:before {
         display: none; } }
@@ -2002,7 +2002,7 @@ body {
 
 .section__sections {
   padding-bottom: 6.25vw;
-  margin-top: -10.78125vw;
+  margin-top: -7.5520833333vw;
   position: relative;
   z-index: 3; }
   .section__sections .section__title {
@@ -2234,7 +2234,7 @@ body {
 
 .section__items {
   position: relative;
-  padding-bottom: 6.71875vw; }
+  padding-bottom: 1.9270833333vw; }
   .section__items .section__title {
     margin-bottom: 2.2916666667vw; }
   .section__items .section__items-title {
@@ -2373,7 +2373,7 @@ body {
       overflow-x: hidden; } }
 
 .section__networking .section__title {
-  margin: 0vw 0 3.4375vw; }
+  margin: 0vw 0 2.4479166667vw; }
   @media (max-width: 728px) {
     .section__networking .section__title .section__title-box:after {
       right: 0; } }
@@ -2693,11 +2693,11 @@ body {
   .section__expertise .btn {
     margin-bottom: 7.5520833333vw; }
   .section__expertise .expertise__cat__dog {
-    width: 32.34375vw;
-    height: 23.8541666667vw;
+    width: 29.53125vw;
+    height: 20.8333333333vw;
     background-size: cover;
     position: absolute;
-    top: 3.75vw;
+    top: 11.9791666667vw;
     right: 0;
     background-image: url("../images/expertise__cat_&_dog.png"); }
   @media (max-width: 1023px) {
@@ -2795,11 +2795,12 @@ body {
           line-height: 11.875vw; } }
 
 .section__responsibility {
-  padding: 7.03125vw 0 7.5520833333vw; }
+  padding: 1.0416666667vw 0 4.9479166667vw; }
   .section__responsibility p {
     font-size: 1.8229166667vw;
     line-height: 2.2395833333vw;
-    margin: 2.34375vw 0 0; }
+    margin: 2.34375vw 0 0;
+    color: #fff; }
   @media (max-width: 1023px) {
     .section__responsibility {
       padding: 4.7961630695vw 0 5.7553956835vw; }
@@ -2815,6 +2816,29 @@ body {
         font-size: 4.375vw;
         line-height: 6.5625vw;
         margin: 3.125vw 0 0; } }
+
+.section__help {
+  background: #fff;
+  text-align: center; }
+  .section__help-title {
+    font-weight: 600;
+    font-size: 2.1875vw;
+    line-height: 2.65625vw;
+    color: #ED1C24;
+    letter-spacing: -0.0260416667vw; }
+  .section__help-box-img {
+    width: 16.9791666667vw;
+    flex: 0 0 16.9791666667vw;
+    height: 11.9270833333vw; }
+    .section__help-box-img img {
+      width: 100%;
+      border-radius: 15px; }
+  .section__help-box-text {
+    padding-left: 3.8541666667vw;
+    font-size: 1.0416666667vw;
+    line-height: 1.25vw;
+    color: #0B0B0B;
+    text-align: left; }
 
 .section__posts {
   background: #FED989;
@@ -3687,8 +3711,8 @@ body {
 .img-back2 {
   width: 29.2708333333vw;
   height: 30.8333333333vw;
-  bottom: 3.125vw;
-  right: 14.0625vw;
+  bottom: -2.3958333333vw;
+  right: 2.3958333333vw;
   background-image: url("../images/cat&dog.png"); }
   @media (max-width: 1023px) {
     .img-back2 {
@@ -3703,8 +3727,8 @@ body {
 .img-back3 {
   width: 34.5833333333vw;
   height: 60.2604166667vw;
-  top: -16.4583333333vw;
-  left: 0;
+  top: -13.5416666667vw;
+  left: -1.0416666667vw;
   background-image: url("../images/dog2.png"); }
   @media (max-width: 1023px) {
     .img-back3 {
@@ -3731,7 +3755,7 @@ body {
 .img-back5 {
   width: 35.9375vw;
   height: 43.59375vw;
-  top: -1.5625vw;
+  top: -4.1666666667vw;
   right: 0vw;
   background-image: url("../images/dog3.png"); }
   @media (max-width: 1023px) {
