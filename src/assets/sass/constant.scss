@@ -375,7 +375,7 @@ p {
     align-items: flex-start;
     span {
         font-weight: 800;
-        font-size: vw(72px);
+        font-size: vw(69px);
         line-height: vw(98px);
         align-items: center;
         color: #000;
@@ -385,13 +385,14 @@ p {
         position: relative;
         margin-right: vw(110px);
         @media (max-width: $Planshet) {
-            font-size: vwp(55px);
+            font-size: vwp(53px);
             line-height: vwp(67px);
             text-shadow: 1px 0 0px #a9a5a5, 0 0px 0px #a9a5a5, 0px 0 0px #a9a5a5, 0 2px 1px #a9a5a5, 0 -1px 1px #a9a5a5;
+            margin-right: vwp(60px);
         }
         @media (max-width: $Mobile) {
-            font-size: vwm(30px);
-            line-height: vwm(37px);        
+            font-size: vwm(19px);
+            line-height: vwm(30px);        
         }
         &:after {
             content: "";
@@ -403,16 +404,16 @@ p {
             right: vw(-125px);
             top: vw(50px);
             @media (max-width: $Planshet) {
-                width: vwp(142.62px);
+                width: vwp(80px);
                 height: vwp(2px);
-                right: vwp(-125px);
-                top: vwp(45px);
+                right: vwp(-75px);
+                top: vwp(35px);
             }
             @media (max-width: $Mobile) {
-                width: vwm(50px);
+                width: vwm(35px);
                 height: vwm(2px);
                 right: vwm(-38px);
-                top: vwm(20px);   
+                top: vwm(15px);   
             }
         }
         &:last-child {
@@ -460,6 +461,12 @@ p {
         flex-direction: column;
         align-items: flex-start;
     }
+}
+.btn-top {
+    position: fixed;
+    bottom: vw(30px);
+    right: vw(80px);
+    z-index: 5;
 }
 .text-shadow {
     text-shadow: 1px 0 1px #a9a5a5, 0 1px 1px #a9a5a5, -1px 0 1px #a9a5a5, 0 -1px 1px #a9a5a5, 0 -2px 1px #a9a5a5;
