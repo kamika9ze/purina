@@ -3,13 +3,14 @@
     flex-direction: column;
     align-items: center;
     background: #0B0B0B;
-    padding: vw(28px) 0 vw(19px);
+    padding: vw(30px) 0 vw(54px);
+    border-top: 2px solid $gold;
     @media(max-width: $Planshet) {
-        padding: vwp(28px) 0 vwp(19px);
+        padding: vwp(28px) 0 vwp(51px);
     }
     
     @media(max-width: $Mobile) {
-        padding: vwm(28px) vwm(10px) vwm(19px);
+        padding: vwm(28px) vwm(10px) vwm(123px);
     }
     &-social {
         margin: 0 0 vw(21px);
@@ -95,7 +96,7 @@
             li {
                 margin: vwm(15px) vwm(15px) 0;
                 a {
-                    font-size: vwm(18px);
+                    font-size: vwm(16px);
                     line-height: vwm(22px);
                     .ico {
                         margin-right: vwm(10px);
@@ -186,13 +187,26 @@
 }
 .footer__bottom {
     background: #ED1C24;
-    padding: vw(10px) 0;
+    padding: vw(6px) 0;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 3;
+    img {
+        height: vw(17px);
+        @media(max-width: $Planshet) {
+            height: vwp(22px);
+        }
+        @media(max-width: $Mobile) {
+            height: vwm(28px);
+        }
+    }
     span {
-        font-size: vw(22px);
+        font-size: vw(14px);
         line-height: vw(20px);
         color: #FFFFFF;
         margin-left: vw(35px);

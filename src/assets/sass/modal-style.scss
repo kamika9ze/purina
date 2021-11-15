@@ -131,13 +131,16 @@
     }
 }
 #login {
+    p {
+        margin-bottom: vw(23px);
+    }
     .logo-max {
         width: vw(227px);
         height: vw(134px);
         position: relative;
         top: 0;
         left: inherit;
-        margin-bottom: vw(80px);
+        margin-bottom: vw(23px);
         @media(max-width: $Planshet) {
             width: vwp(119px);
             height: vwp(70px);
@@ -150,7 +153,7 @@
         }  
     }
     .modal-dialog {
-        padding-bottom: vw(128px);
+        padding: vw(83px) vw(60px) vw(60px);
         @media(max-width: $Planshet) {
         }
         @media(max-width: $Mobile) {
@@ -215,7 +218,7 @@
         } 
     }
 }
-#reg {
+#reg, #editData {
     .modal-dialog {
         width: vw(1320px);
         padding: vw(93px) vw(55px);

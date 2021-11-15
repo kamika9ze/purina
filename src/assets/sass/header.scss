@@ -25,6 +25,47 @@ header {
     }
 
 }
+.header {
+    &__info {
+        position: absolute;
+        left: calc(100% + 30px);
+        &-text {
+            font-size: vw(9.8px);
+            line-height: 163.4%;
+            text-transform: uppercase;
+            color: $gold;
+            width: vw(108px);
+            height: vw(63px);
+            background-image: url("data:image/svg+xml,%3Csvg width='108' height='63' viewBox='0 0 108 63' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.590164 13.4199L7.29906 6.51935L13.6108 0.590164H107.213V61.9672H0.590164V13.4199Z' stroke='%23FED989' stroke-width='1.18033'/%3E%3C/svg%3E%0A");
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-left: vw(3px);
+        }
+        &-data {
+            font-weight: 600;
+            font-size: vw(19.6721px);
+            line-height: 163.4%;
+            color: #10222F;
+            background: #FED989;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            span {
+                font-weight: 800;
+                font-size: vw(9.83607px);
+                padding-right: vw(3px);
+            }
+        }
+    }
+    @media(max-width: $Planshet) {
+        &__info {
+            display: none;
+        }
+    }
+}
 .logo-max {
     width: vw(275px);
     height: vw(133px);

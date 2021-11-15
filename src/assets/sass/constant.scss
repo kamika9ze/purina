@@ -20,7 +20,7 @@ $font: 'Montserrat';
 $grey: #A9A5A5;
 body {
     color: #000;
-    font: 15px/18px 'Montserrat';
+    font: 16px/20px 'Montserrat';
     position: relative;
     height: 100%;
     color: $TextColor;
@@ -375,7 +375,7 @@ p {
     align-items: flex-start;
     span {
         font-weight: 800;
-        font-size: vw(69px);
+        font-size: vw(72px);
         line-height: vw(98px);
         align-items: center;
         color: #000;
@@ -427,15 +427,24 @@ p {
     .section__title-box {
         position: relative;
     }
-    &-position {
+    .section__title-position {
         font-weight: 500;
         font-size: vw(35px);
         line-height: vw(43px);
         color: $gold;
-        padding-left: vw(138px);
+        padding-left: vw(0px);
+        text-shadow: initial;
+        top: vw(-15px);
+        @media (max-width: $Planshet) {
+            font-size: vwp(25px);
+            line-height: vwp(43px);
+            top: vwp(-8px);
+        }
         @media(max-width: $Mobile) {
-            padding: vwm(15px) 0 0;
+            top: vwp(0px);
+            padding: vwm(0px) 0 0;
             font-size: vwm(18px);
+            line-height: 1.2;
         }
     }
     div {
@@ -449,12 +458,12 @@ p {
         @media (max-width: $Planshet) {
             font-size: vwp(20px);
             line-height: vwp(25px);
-            top: vwp(-2px);
+            top: vwp(0px);
         }
         @media (max-width: $Mobile) {
             font-size: vwm(14px);
             line-height: vwm(17px);     
-            top: vwm(-2px);   
+            top: vwm(0px);   
         }
     }
     @media(max-width: $Mobile) {
