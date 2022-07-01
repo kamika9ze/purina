@@ -688,7 +688,7 @@
 					<div class="slider__speakers slider__speakers-desctope">
 						<div class="slider__speakers-items">
 							<div class="slider__speakers-item">
-								<div class="slider__speakers-item-img"><img src="./assets/images/Фильков-removebg-preview.png" /><span class="btn btn-play"></span></div>
+								<div class="slider__speakers-item-img"><img src="./assets/images/slider__speakers1.jpg" /><span class="btn btn-play"></span></div>
 								<div class="slider__speakers-item-title">Лекция &laquo;Трансгуманизм. Как знания
 									и&nbsp;технологии превращают нас
 									в&nbsp;сверхлюдей&raquo;</div>
@@ -1035,7 +1035,7 @@
 					</div>
 					<div class="slider__speakers slider__speakers-mobile">
 							<div class="slider__speakers-item">
-								<div class="slider__speakers-item-img"><img src="./assets/images/Фильков-removebg-preview.png" /><span class="btn btn-play"></span></div>
+								<div class="slider__speakers-item-img"><img src="./assets/images/slider__speakers1.jpg" /><span class="btn btn-play"></span></div>
 								<div class="slider__speakers-item-title">Лекция &laquo;Трансгуманизм. Как знания
 									и&nbsp;технологии превращают нас
 									в&nbsp;сверхлюдей&raquo;</div>
@@ -1577,8 +1577,9 @@
 								<button class="btn btn-more">Подробнее<span class="ico ico-arrow-left-gold"></span></button>
 							</div>
 						</div>
+						<div class="partner-text">ПАРТНЕР-МОДЕРАТОР</div>
 					</div>
-					<div class="d-col-6 m-col-12 justify-center d-flex d-f-column text-center partner">
+					<div class="d-col-6 m-col-12 d-justify-end d-flex d-f-column text-center partner">
 						<div class="partner-img partner-img-2">
 							<div class="d-hidden partner-btn-mobile"><button class="btn btn-more">Подробнее<span class="ico ico-arrow-left-gold"></span></button></div>
 							<div class="partner-box">
@@ -1586,6 +1587,7 @@
 								<button class="btn btn-more">Подробнее<span class="ico ico-arrow-left-gold"></span></button>
 							</div>
 						</div>
+						<div class="partner-text">Информационный партнер</div>
 					</div>
 				</div>
 				<div class="d-col-12 d-flex d-f-row m-f-column">
@@ -1763,59 +1765,397 @@
 			<div class="modal-dialog" role="document">
 				<div class="modal-container">
 					<form class="d-col-12 d-flex d-f-column text-center">
-						<div class="feedback-title">Форма обратной связи</div>
 						<div class="feedback-box-container feedback-box-container-1 d-col-12 ">
-							<div  class="d-col-12 d-flex d-f-row p-f-column">
-								<div class="d-col-6 p-col-12 ">
-									<div class="form__item">
-										<label class="gold">ID</label>
-										<input type="text" placeholder="2911190080179-1300">
+							<div class="feedback-title">Форма обратной связи</div>
+							<div class="pad-0-150">
+								<div  class="d-col-12 d-flex d-f-row p-f-column">
+									<div class="d-col-6 p-col-12 ">
+										<div class="form__item">
+											<label class="gold">ID</label>
+											<input type="text" placeholder="2911190080179-1300">
+										</div>
+									</div>
+									<div class="d-col-6 p-col-12">
+										<div class="form__item">
+											<label class="gold">E-mail</label>
+											<input type="text" placeholder="zhstk@rambler.ru">
+										</div>							
 									</div>
 								</div>
-								<div class="d-col-6 p-col-12">
+								<div  class="d-col-12 d-flex d-f-row p-f-column">
+									<div class="d-col-6 p-col-12">
+										<div class="form__item">
+											<label class="gold">Date of visit</label>
+											<input type="text" placeholder="12/16/2020  12:00:00 AM">
+										</div>
+									</div>
+									<div class="d-col-6 p-col-12">
+										<div class="form__item">
+											<label class="gold">Вы являетесь заводчиком 
+												или вет.врачом?</label>
+											<input type="text" placeholder="Заводчик">
+										</div>							
+									</div>
+								</div>
+								<div  class="d-col-12 d-flex d-f-row p-f-column text-center">
 									<div class="form__item">
-										<label class="gold">E-mail</label>
-										<input type="text" placeholder="zhstk@rambler.ru">
-									</div>							
+										<label class="gold text-center">Откуда Вы узнали о нашем мероприятии?</label>
+										<select id="learned" class="js-select">
+											<option>Выберите ответ</option>
+											<option value="Internet">Интернет</option>
+											<option value="Radio">Радио</option>
+											<option value="Reklama">Реклама</option>
+										  </select>
+									</div>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column text-center">
+								<div class="form__item-inline form__item-checkbox">
+									<div class="form__item-inline">
+										<div class="form__item-inline-checkbox-title">Оцените организацию мероприятия в целом</div>
+										<p>по 5-ти балльной шкале показатели, представленные в таблице
+											(где 1 – «очень плохо», 2 – «плохо», 
+										   3 – «удовлетворительно», «нейтрально», 4 – «хорошо», 5 – «очень хорошо»)</p>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization" id="rate__organization1">
+										<label class="gold" for="rate__organization1">1</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization"  id="rate__organization2">
+										<label class="gold" for="rate__organization2">2</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization"  id="rate__organization3">
+										<label class="gold" for="rate__organization3">3</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization"  id="rate__organization4">
+										<label class="gold" for="rate__organization4">4</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization"  id="rate__organization5">
+										<label class="gold" for="rate__organization5">5</label>
+									</div>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column text-center pad-20-0">
+								<div class="form__item-inline form__item-checkbox">
+									<div class="form__item-inline">
+										<div class="form__item-inline-checkbox-title">Оцените удобство предварительной регистрации</div>
+										<p>по 5-ти балльной шкале показатели, представленные в таблице
+											(где 1 – «очень плохо», 2 – «плохо», 
+										   3 – «удовлетворительно», «нейтрально», 4 – «хорошо», 5 – «очень хорошо»)</p>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization2" id="rate__organization21">
+										<label class="gold" for="rate__organization21">1</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization22"  id="rate__organization22">
+										<label class="gold" for="rate__organization22">2</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization2"  id="rate__organization23">
+										<label class="gold" for="rate__organization23">3</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization2"  id="rate__organization24">
+										<label class="gold" for="rate__organization24">4</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization2"  id="rate__organization25">
+										<label class="gold" for="rate__organization25">5</label>
+									</div>
 								</div>
 							</div>
 							<div  class="d-col-12 d-flex d-f-row p-f-column">
-								<div class="d-col-6 p-col-12">
-									<div class="form__item">
-										<label class="gold">Date of visit</label>
-										<input type="text" placeholder="12/16/2020  12:00:00 AM">
+								<div class="d-col-12 p-col-12 text-center">
+									<button class="btn btn-gold">продолжить</button>
+								</div>
+							</div>
+						</div>
+						<div class="feedback-box-container feedback-box-container-2 d-col-12 " style="display: none;">
+							<div class="feedback-title">Форма обратной связи</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column text-center">
+								<div class="form__item-inline form__item-checkbox">
+									<div class="form__item-inline">
+										<div class="form__item-inline-checkbox-title">Оцените качество презентаций лекторов</div>
+										<p>по 5-ти балльной шкале показатели, представленные в таблице
+											(где 1 – «очень плохо», 2 – «плохо», 
+										   3 – «удовлетворительно», «нейтрально», 4 – «хорошо», 5 – «очень хорошо»)</p>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization3" id="rate__organization31">
+										<label class="gold" for="rate__organization31">1</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization3"  id="rate__organization32">
+										<label class="gold" for="rate__organization32">2</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization3"  id="rate__organization33">
+										<label class="gold" for="rate__organization33">3</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization3"  id="rate__organization34">
+										<label class="gold" for="rate__organization34">4</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization3"  id="rate__organization35">
+										<label class="gold" for="rate__organization35">5</label>
 									</div>
 								</div>
-								<div class="d-col-6 p-col-12">
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column text-center pad-20-0">
+								<div class="form__item-inline form__item-checkbox">
+									<div class="form__item-inline">
+										<div class="form__item-inline-checkbox-title">Оцените практическую ценность прослушанных лекций</div>
+										<p>по 5-ти балльной шкале показатели, представленные в таблице
+											(где 1 – «очень плохо», 2 – «плохо», 
+										   3 – «удовлетворительно», «нейтрально», 4 – «хорошо», 5 – «очень хорошо»)</p>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization4" id="rate__organization41">
+										<label class="gold" for="rate__organization41">1</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization4"  id="rate__organization42">
+										<label class="gold" for="rate__organization42">2</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization4"  id="rate__organization43">
+										<label class="gold" for="rate__organization43">3</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization4"  id="rate__organization44">
+										<label class="gold" for="rate__organization44">4</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization4"  id="rate__organization45">
+										<label class="gold" for="rate__organization45">5</label>
+									</div>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column">
+								<div class="d-col-12 p-col-12 ">
 									<div class="form__item">
-										<label class="gold">Вы являетесь заводчиком 
-											или вет.врачом?</label>
-										<input type="text" placeholder="Заводчик">
-									</div>							
+										<label class="gold">Какая из лекций вам понравилась больше всего?</label>
+										<textarea type="textarea" placeholder="Введите текст..."></textarea>
+									</div>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column">
+								<div class="d-col-12 p-col-12 ">
+									<div class="form__item">
+										<label class="gold">Какие темы лекций вам будут интересны в будущем?</label>
+										<textarea type="textarea" placeholder="Введите текст..."></textarea>
+									</div>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column">
+								<div class="d-col-6 p-col-12 text-right">
+									<button class="btn btn-border_gold">назад</button>
+								</div>
+								<div class="d-col-6 p-col-12 text-left">
+									<button class="btn btn-gold">продолжить</button>
+								</div>
+							</div>
+						</div>
+						<div class="feedback-box-container feedback-box-container-3 d-col-12 " style="display: none;">
+							<div class="feedback-title">Форма обратной связи</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column text-center">
+								<div class="form__item-inline form__item-checkbox">
+									<div class="form__item-inline">
+										<div class="form__item-inline-checkbox-title">Оцените качество работы переводчиков</div>
+										<p>по 5-ти балльной шкале показатели, представленные в таблице
+											(где 1 – «очень плохо», 2 – «плохо», 
+										   3 – «удовлетворительно», «нейтрально», 4 – «хорошо», 5 – «очень хорошо»)</p>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization5" id="rate__organization51">
+										<label class="gold" for="rate__organization51">1</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization5"  id="rate__organization52">
+										<label class="gold" for="rate__organization52">2</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization5"  id="rate__organization53">
+										<label class="gold" for="rate__organization53">3</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization5"  id="rate__organization54">
+										<label class="gold" for="rate__organization54">4</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization5"  id="rate__organization55">
+										<label class="gold" for="rate__organization55">5</label>
+									</div>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column text-center pad-20-0">
+								<div class="form__item-inline form__item-checkbox">
+									<div class="form__item-inline">
+										<div class="form__item-inline-checkbox-title">Оцените работу центральной студии и ее программу</div>
+										<p>по 5-ти балльной шкале показатели, представленные в таблице
+											(где 1 – «очень плохо», 2 – «плохо», 
+										   3 – «удовлетворительно», «нейтрально», 4 – «хорошо», 5 – «очень хорошо»)</p>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization6" id="rate__organization61">
+										<label class="gold" for="rate__organization61">1</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization6"  id="rate__organization62">
+										<label class="gold" for="rate__organization62">2</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization6"  id="rate__organization63">
+										<label class="gold" for="rate__organization63">3</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization6"  id="rate__organization64">
+										<label class="gold" for="rate__organization64">4</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization6"  id="rate__organization65">
+										<label class="gold" for="rate__organization65">5</label>
+									</div>
 								</div>
 							</div>
 							<div  class="d-col-12 d-flex d-f-row p-f-column text-center">
 								<div class="form__item">
-									<label class="gold">Откуда Вы узнали о нашем мероприятии?</label>
-									<select id="about" class="js-select">
-										<option>Выберите ответ</option>
-										<option value="Internet">Интернет</option>
-										<option value="Radio">Радио</option>
-										<option value="Reklama" selected>Реклама</option>
+									<label class="gold text-center">Оправдались ли Ваши ожидания от on-line формата?</label>
+									  <select id="about" class="js-select">
+										<option value="yes">Да</option>
+										<option value="no">Нет</option>
 									  </select>
+									  <br>
+									  <br>
 								</div>
 							</div>
-							<div  class="d-col-12 d-flex d-f-row p-f-column text-center">
-								<div class="form__item">
-									<input type="radio" name="rate__organization" id="rate__organization1">
-									<label class="gold" for="rate__organization1">Откуда Вы узнали о нашем мероприятии?</label>
-									<input type="radio" name="rate__organization"  id="rate__organization2">
-									<label class="gold" for="rate__organization2">Откуда Вы узнали о нашем мероприятии?</label>
+							<div  class="d-col-12 d-flex d-f-row p-f-column">
+								<div class="d-col-12 p-col-12 ">
+									<div class="form__item">
+										<label class="gold">Насколько проведенное мероприятие соответствовало Вашим ожиданиям 
+											с технической точки зрения?</label>
+										<textarea type="textarea" placeholder="Введите текст..."></textarea>
+									</div>
 								</div>
 							</div>
-							<button class="btn btn-gold">прикрепить фото</button>
+							<div  class="d-col-12 d-flex d-f-row p-f-column">
+								<div class="d-col-6 p-col-12 text-right">
+									<button class="btn btn-border_gold">назад</button>
+								</div>
+								<div class="d-col-6 p-col-12 text-left">
+									<button class="btn btn-gold">продолжить</button>
+								</div>
+							</div>
+						</div>
+						<div class="feedback-box-container feedback-box-container-4 d-col-12 " style="display: none;">
+							<div class="feedback-title">Форма обратной связи</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column text-center pad-20-0">
+								<div class="form__item-inline form__item-checkbox">
+									<div class="form__item-inline">
+										<div class="form__item-inline-checkbox-title">Насколько вероятно, что Вы примите участие в подобном мероприятии в будущем?</div>
+										<p>по 5-ти балльной шкале показатели, представленные в таблице
+											(где 1 – «очень плохо», 2 – «плохо», 
+										   3 – «удовлетворительно», «нейтрально», 4 – «хорошо», 5 – «очень хорошо»)</p>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization7" id="rate__organization71">
+										<label class="gold" for="rate__organization71">1</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization7"  id="rate__organization72">
+										<label class="gold" for="rate__organization72">2</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization7"  id="rate__organization73">
+										<label class="gold" for="rate__organization73">3</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization7"  id="rate__organization74">
+										<label class="gold" for="rate__organization74">4</label>
+									</div>
+									<div class="form__item-inline-item form__item-inline-checkbox">
+										<input type="radio" name="rate__organization7"  id="rate__organization75">
+										<label class="gold" for="rate__organization75">5</label>
+									</div>
+									<br>
+									<br>
+									<br>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column">
+								<div class="d-col-12 p-col-12 ">
+									<div class="form__item">
+										<label class="gold">Комментарии</label>
+										<textarea type="textarea" placeholder="Введите текст..."></textarea>
+									</div>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column">
+								<div class="d-col-12 p-col-12 ">
+									<div class="form__item">
+										<label class="gold">Что бы Вы рекомендовали улучшить в организации Конференции?</label>
+										<textarea type="textarea" placeholder="Введите текст..."></textarea>
+									</div>
+								</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column">
+								<div class="d-col-6 p-col-12 text-right">
+									<button class="btn btn-border_gold">назад</button>
+								</div>
+								<div class="d-col-6 p-col-12 text-left">
+									<button class="btn btn-gold">продолжить</button>
+								</div>
+							</div>
+							<br>
+									<br>
+									<br>
+						</div>
+						<div class="feedback-box-container feedback-box-container-5 d-col-12 m-f-column" style="/* display: flex; */ display: none;">
+							<div  class="d-col-12 d-flex d-f-row p-f-column text-center pad-20-0 text-center">
+								<div class="feedback-gratitude">Благодарим Вас за&nbsp;участие в&nbsp;опросе. На&nbsp;ваш электронный адрес направлено письмо с&nbsp;сертификатом</div>
+							</div>
+							<div  class="d-col-12 d-flex d-f-row p-f-column feedback-box-btn">
+								<div class="d-col-12 p-col-12 text-center">
+									<button class="btn btn-gold">готово</button>
+								</div>
+							</div>
 						</div>
 					</form>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="get__gift" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<div class="modal-container">
+					<div class="section__title">
+						<div class="section__title-box">
+							<span>Pro quest</span>
+						</div>
+						<div>Как получить подарки</div>
+					</div>
+					<p>Вы&nbsp;раскрыли 2&nbsp;принципа PRO PLAN<sup class="reg">&reg;</sup>️ PARTNERS. Продолжайте поиски!</p>
+					<button class="btn btn-grey2">ПОЛУЧИТЕ ПОДАРОК</button>
+				</div>
+			</div>
+		</div>
+		<div class="modal fade" id="get__gift2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+			<div class="modal-dialog" role="document">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button> 
+				<div class="modal-container">
+					<div class="section__title">
+						<div class="section__title-box">
+							<span>Pro quest</span>
+						</div>
+						<div>Как получить подарки</div>
+					</div>
+					<p>Поздравляем! Вы&nbsp;раскрыли все принципы PRO <br>PLAN<sup class="reg">&reg;</sup>️ PARTNERS.</p>
+					<button class="btn btn-grey2">ПОЛУЧИТЕ ПОДАРОК</button>
 				</div>
 			</div>
 		</div>
@@ -1830,7 +2170,7 @@
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.13.2/js/bootstrap-select.min.js"></script>
 		<script>
 			$(document).ready(function () {
-				$('#feedback').modal('show');
+				$('#feedback ').modal('show');
 				$('.js-select').select2({
 					minimumResultsForSearc: Infinity
 				});
@@ -1903,6 +2243,35 @@
 				// 		}
 				// 	]
 				// });
+				$('.slider__sections').slick({
+					dots: false,
+					arrows: true,
+					autoplaySpeed: 5000,
+					slidesToShow: 3,
+					slidesToScroll: 1,
+					centerMode: false,
+					centerPadding: '0px',
+					responsive: [
+						{
+						breakpoint: 1023,
+						settings: {
+							arrows: true,
+							centerMode: true,
+							centerPadding: '223px',
+							slidesToShow: 1
+						}
+					},
+					{
+						breakpoint: 480,
+						settings: {
+							arrows: true,
+							centerMode: true,
+							centerPadding: '15px',
+							slidesToShow: 1
+						}
+						}
+					]
+				});
 				if($('html').width() > 1023) {
 					$('.slider__networking-max').slick({
 						slidesToShow: 1,
@@ -1948,35 +2317,6 @@
 								centerMode: true,
 								centerPadding: '70px',
 							}
-						}
-					]
-				});
-				$('.slider__sections').slick({
-					dots: false,
-					arrows: true,
-					autoplaySpeed: 5000,
-					slidesToShow: 3,
-					slidesToScroll: 1,
-					centerMode: false,
-					centerPadding: '0px',
-					responsive: [
-						{
-						breakpoint: 1023,
-						settings: {
-							arrows: true,
-							centerMode: true,
-							centerPadding: '223px',
-							slidesToShow: 1
-						}
-					},
-					{
-						breakpoint: 480,
-						settings: {
-							arrows: true,
-							centerMode: true,
-							centerPadding: '15px',
-							slidesToShow: 1
-						}
 						}
 					]
 				});

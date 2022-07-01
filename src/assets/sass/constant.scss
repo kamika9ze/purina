@@ -347,6 +347,47 @@ button {
             font-size: vwm(10px);
         }
     }
+    &-grey3 {
+        background: rgba(40, 37, 37, 0.28);
+        border-radius: 5px;
+        width: vw(280px);
+        line-height: vw(60px);
+        color: #FFFFFF;
+        &:hover {
+            background: #FE353D;
+        }
+        &:active {
+            background: #ED1C24;
+        }
+        .ico-arrow-left-white {
+            top: vw(-2px);
+            margin-left: vw(21px);
+            position: relative;
+        }
+        @media(max-width: $Planshet) {
+            width: vwp(280px);
+            line-height: vwp(60px);
+            .ico-arrow-left-white {
+                top: vwp(-2px);
+                margin-left: vwp(21px);
+            }
+        }
+        
+        @media(max-width: $Mobile) {
+            width: 100%;
+            line-height: vwm(60px);
+            .ico-arrow-left-white {
+                top: vwm(-2px);
+                margin-left: vwm(21px);
+            }
+        }
+    }
+    &-get__certificate {
+        margin-top: vw(17px);
+        @media(max-width: $Mobile) {
+            margin-top: vwp(17px);
+        }
+    }
     @media(max-width: $Planshet) {
         font-size: vwp(16px);
     }

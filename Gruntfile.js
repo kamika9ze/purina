@@ -10,7 +10,8 @@ module.exports = function(grunt) {
 		      },
 	            files: [{
 	            	'build/assets/css/styles.css': 'src/assets/sass/main.scss',   
-	            	'src/assets/css/styles.css': 'src/assets/sass/main.scss'
+	            	'src/assets/css/styles.css': 'src/assets/sass/main.scss',
+					'src/assets/css/revisions.css': 'src/assets/sass/revisions.scss'
 				}]
 	        }
 		},
@@ -64,15 +65,6 @@ module.exports = function(grunt) {
 			},
 
 
-			styles: {
-				files: [
-					'src/assets/sass/*.scss',
-					'src/*.html',
-				],
-				tasks: [				
-					'sass'					
-				],
-			},
 			files: ['src/**'],
 			tasks: ['copy', 'includereplace:development'],
 		},

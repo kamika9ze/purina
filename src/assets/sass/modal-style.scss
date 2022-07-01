@@ -15,7 +15,7 @@
         box-sizing: border-box;
     }
     .section__title span {
-        color: #292929;
+        color: #292929; 
     }
     .modal-dialog {
         width: vw(900px);
@@ -126,6 +126,23 @@
                     font-size: vwm(12px);
                     line-height: vwm(15px);
                 }  
+            }
+        }
+    }
+    &#feedback {
+        .modal-dialog {
+            width: vw(1600px);
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(15px);
+            .feedback-title {
+                font-weight: 500;
+                font-size: 40px;
+                line-height: 79px;
+                align-items: center;
+                text-align: center;
+                text-transform: uppercase;
+                color: #FED989;
+                margin-bottom: vw(60px);
             }
         }
     }
@@ -241,9 +258,12 @@
             text-align: left;
             font-weight: 500;
             font-size: vw(16px);
-            line-height: 200%;
+            line-height: 170%;
             color: $grey;
             letter-spacing: vw(-0.5px);
+            a {
+                color: $gold;
+            }
         }
         @media(max-width: $Planshet) {
             width: vwp(566px);
@@ -268,6 +288,9 @@
         @media(max-width: $Mobile) {
             width: vwm(288px);
             padding: vwm(24px) vwm(20px);
+            .btn {
+                font-size: vwm(10px);
+            }
             .d-col-6 {
                 padding: 0 vwm(0px);
             }

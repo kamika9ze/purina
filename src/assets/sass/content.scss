@@ -688,7 +688,7 @@ section {
         }
         
         @media(max-width: $Mobile) {
-            padding: 0 vwm(3px);
+            padding: 0 vwm(0px);
             &-img {
                 margin-bottom: vwm(5px);
             }
@@ -724,14 +724,57 @@ section {
     }
 }
 .slider__speakers {
+    &-mobile {
+        display: none!important;
+    }
+    @media(max-width: $Planshet) {
+        &-desctope {
+            display: none!important;
+        }
+        &-mobile {
+            display: flex!important;
+        }
+    }
+    @media(max-width: $Mobile) {
+        font-size: vwm(14px);
+        line-height: vwm(17px);
+    }
+    .slick-track {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .slick-slide {
+        // flex-basis: 33.3%;
+    }
+    .slider__speakers-items {
+        display: flex!important;
+        flex-wrap: wrap;
+    }
     .slider__speakers-item {
+        width: 33.3%;
+        flex-basis: 33.3%;
         padding: 0 vw(10px);
         box-sizing: border-box;
         position: relative;
+        margin-bottom: vw(30px);
         &-img {
             margin-bottom: vw(15px);
+            position: relative;
+            text-align: center;
             img {
-                width: 100%;
+                display: inline-block;
+                max-width: 90%;
+                width: vw(218px);
+            }
+            &:after {
+                content: '';
+                width: calc(100% + 4px);
+                height: vw(115px);
+                position: absolute;
+                bottom: -1px;
+                left: -2px;
+                background-size: cover;
+                background-image: url("data:image/svg+xml,%3Csvg width='341' height='115' viewBox='0 0 341 115' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M340 76V114H1V2V1L340 75V76Z' fill='black'/%3E%3Cpath d='M1 2L340 76M1 2V114H340V76M1 2V1L340 75V76' stroke='black'/%3E%3Cpath d='M1 1L340 75' stroke='%23FED989'/%3E%3C/svg%3E%0A");
             }
         }
         &-title {
@@ -787,6 +830,12 @@ section {
             padding: 0 vwp(13px);
             &-img {
                 margin-bottom: vwp(15px);
+                img {
+                    width: vwp(218px);
+                }
+                &:after {
+                    height: vwp(118px);
+                }
             }
             &-title {
                 font-size: vwp(18px);
@@ -822,6 +871,12 @@ section {
             padding: 0 vwm(3px);
             &-img {
                 margin-bottom: vwm(10px);
+                img {
+                    width: vwm(218px);
+                }
+                &:after {
+                    height: vwm(118px);
+                }
             }
             &-title {
                 font-size: vwm(14px);
@@ -1809,7 +1864,7 @@ section {
     }
 }
 .section__partners {
-    padding: vw(56px) 0 vw(36px);
+    padding: vw(56px) 0 vw(120px);
     position: relative;
     overflow: hidden;
     .section__title {
@@ -1849,9 +1904,13 @@ section {
             background-image: url('../images/partner-img-2.svg');
         }
         &-img-3 {
+            width: vw(350px);
+            height: vw(350px);
             background-image: url('../images/partner-img-3.svg');
         }
         &-img-4 {
+            width: vw(350px);
+            height: vw(350px);
             background-image: url('../images/partner-img-4.svg');
         }
         &-box {
@@ -2381,9 +2440,9 @@ section {
     }
 }
 .partners-quest-info {
-    padding: vw(85px) 0 vw(94px);
+    padding: vw(45px) 0 vw(94px);
     &-text {
-        font-size: vw(16px);
+        font-size: vw(20px);
         line-height: 150%;
         color: $grey;
         padding-right: vw(0px);
@@ -2806,9 +2865,9 @@ section {
                 }
             }
             &-title {
-                font-size: vwm(24px);
-                line-height: vwm(29px);
-                margin-bottom: vwm(30px);
+                font-size: vwm(18px);
+                line-height: vwm(22px);
+                margin-bottom: vwm(22px);
             }
             &-items {
                 margin-bottom: vwm(15px);
@@ -2819,13 +2878,13 @@ section {
                 display: flex;
                 flex-direction: row;
                 &-img {
-                    width: vwm(30px);
-                    flex: 0 0 vwm(30px);
-                    height: vwm(30px);
+                    width: vwm(25px);
+                    flex: 0 0 vwm(25px);
+                    height: vwm(25px);
                 }
                 &-text {
                     padding-left: vwm(10px);
-                    font-size: vwm(14px);
+                    font-size: vwm(10px);
                     padding-right: vwm(73px);
                     .like {
                         top: vwm(3px);
@@ -3058,6 +3117,7 @@ section {
         background-image: url('../images/cat3.png');
         width: vwp(294px);
         height: vwp(246px);
+        display: none;
     }
 
     @media(max-width: $Mobile) {
